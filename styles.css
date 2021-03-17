@@ -7,6 +7,11 @@
     --container-width: 1200px;
     }
   
+*{
+    font-family: 'Raleway', sans-serif;
+}
+
+
 
     /* Tout Petit Ecran*/
     @media screen and (max-width:576px) {
@@ -32,3 +37,62 @@
     @media screen and (min-width:1200px){
 
     }
+
+
+.title-contact{
+    text-align: center;
+}
+
+.Bloc-container{
+    display:flex;
+    justify-content: space-between;
+}
+
+.Bloc{
+    flex:3;
+}
+
+.container-form{
+    flex:4;
+    display:flex;
+    flex-direction : column;
+    align-items: center;
+    max-width: var(--container-width);
+}
+
+.form-style{
+    justify-content: space-around;
+    text-align: center;
+    margin-bottom: 1em;
+    width:100%;
+    min-width: 225px;
+}
+
+.form-style input{
+    padding : 10px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border-width: 1px;
+}
+
+.form-style textarea{
+    padding : 10px;
+    height : 100px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+
+#submit{
+    width:100%;
+    background-color:var(--firstColor);
+    color:var(--secondColor);
+    transition: transform .2s;
+    border-radius: 10px;
+    font-weight: bolder;
+}
+
+#submit:hover {
+    transform: scale(1.1);
+}
