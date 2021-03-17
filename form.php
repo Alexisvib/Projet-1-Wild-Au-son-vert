@@ -12,6 +12,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap" rel="stylesheet">
   </head>
   <body>
+    <?php require('carroussel.php')?>
     <h1 class="title-contact">Contactez-nous !</h1>
     <div class="Bloc-container">
             <div class="Bloc"></div>

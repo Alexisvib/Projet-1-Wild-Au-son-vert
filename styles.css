@@ -93,6 +93,22 @@
     font-weight: bolder;
 }
 
-#submit:hover {
+#submit:hover{
     transform: scale(1.1);
+}
+
+/* ATTENTION MON CSS CAROUSSEL COMMENCE LA */
+.container-caroussel{
+    display:flex;
+}
+
+.carroussel-bloc-around{
+    flex:2%;
+}
+
+.carroussel-bloc{
+    flex:96%;
+    max-width: var(--container-width);
+    height:227px;
+    background-color: #ff0000;
 }
