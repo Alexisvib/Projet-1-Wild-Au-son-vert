@@ -6,7 +6,6 @@
     --thirdColor: #204033;
     --container-width: 1200px;
     }
-  
 
     /* Tout Petit Ecran*/
     @media screen and (max-width:576px) {
@@ -32,3 +31,9 @@
     @media screen and (min-width:1200px){
 
     }
+
+*{
+    margin : 0;
+}
+
+
