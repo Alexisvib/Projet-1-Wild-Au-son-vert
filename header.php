@@ -7,11 +7,11 @@
         class="logotype"
       />
       <ul id="menusimple">
-     <li><a href="#">ACCUEIL</a></li>
+     <li><a href="index.php">ACCUEIL</a></li>
      <li><a href="#">BOUTIQUE</a></li>
      <li><a href="#">EVENEMENTS</a></li>
      <li><a href="#">L'EQUIPE</a></li>
-     <li><a href="#">CONTACT</a></li>
+     <li><a href="form.php">CONTACT</a></li>
   </ul>
 
       <div id="boutonBurger" alt="bouton menu">☰</div>
@@ -19,11 +19,11 @@
     </div>
     
   <ul id="menuBurger">
-     <li><a href="#">ACCUEIL</a></li>
+     <li><a href="index.php">ACCUEIL</a></li>
      <li><a href="#">BOUTIQUE</a></li>
      <li><a href="#">EVENEMENTS</a></li>
      <li><a href="#">L'EQUIPE</a></li>
-     <li><a href="#">CONTACT</a></li>
+     <li><a href="form.php">CONTACT</a></li>
   </ul>
 
   </header>
