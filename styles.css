@@ -3,40 +3,186 @@
     --firstColor: #1ed760;
     /*footer; header; burger menu:*/
     --secondColor: #1b1b1b;
-    --thirdColor: #204033;
+    --thirdColor: #859684;
     --container-width: 1200px;
     }
   
 *{
+    margin: 0px;
+    padding: 0px;
     font-family: 'Raleway', sans-serif;
 }
 
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color:var(--secondColor);
+        height: 80px;
+        width: auto;
+        border-bottom: 1px solid var(--thirdColor);
+        font-family: 'Raleway', sans-serif;
+    }
 
+    #boutonBurger {
+        height: 20px;
+        margin: 30px 20px 0 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border: none;
+        color: var(--firstColor);
+        text-align: center;
+        text-decoration: none;
+        display: flex;
+        font-size: 30px;
+        font-style: railway;
+        cursor: pointer;
+        font-family: 'Raleway', sans-serif;
+    }
 
-    /* Tout Petit Ecran*/
-    @media screen and (max-width:576px) {
+    #boutonBurger:hover {
+        color: var(--thirdColor);
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+      }
 
+    #boutonBurger:active {
+        color: var(--thirdColor);
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+        
+      }
+    
+      #menusimple {  
+        display: none;
+        justify-content: flex-end;
+        margin-right: 35px;
+        font-family: 'Raleway', sans-serif;
+    
+    }
+
+    #menuBurger{
+        display: none;
+        float: right;
+        background-color: var(--secondColor);
+        font-family: 'Raleway', sans-serif;
+        border-radius: 0px 0px 0 10px;
+        animation: fadein 1s;
+    }
+  
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+    ul {
+        display: flex;
+        align-items: center;
+    }
+    li {
+        list-style-type: none;
+        padding: 10px;
+    }
+    a:hover {
+        color: var(--firstColor);
+    }
+    a {
+        text-decoration: none;
+        color: var(--thirdColor);
+    }
+
+     /* Tout Petit Ecran*/
+     @media screen and (max-width:576px) {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
     }
 
     /* Petit Ecran*/
-    @media screen and (min-width:576px) and (max-width:767px) {
-
+    @media screen and (min-width:576px) and (max-width:768px) {
+        ul {
+            display: flex;
+            flex-direction: column;
+        }
+        
     }
 
     /* Medium Ecran*/
     @media screen and (min-width:768px) and (max-width:991px) {
-
+        #boutonBurger {
+            display: none;
     }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color:var(--secondColor);
+        height: 100px;
+        width: auto;
+        border-bottom: 1px solid var(--thirdColor);
+        font-family: 'Raleway', sans-serif;
+    }
+    #menusimple {
+        display:flex;
+        margin-right: 35px;
+        font-family: 'Raleway', sans-serif;
+        list-style-type: none;
+        
+    }
+    
+}
 
     /* Large Ecran*/
-    @media screen and (min-width:992px) and (max-width:1199px) {
-
+    @media screen and (min-width:991px) and (max-width:1200px) {
+        #boutonBurger {
+            display: none;
     }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color:var(--secondColor);
+        height: 100px;
+        width: auto;
+        border-bottom: 1px solid var(--thirdColor);
+        font-family: 'Raleway', sans-serif;
+    }
+    #menusimple {
+        display:flex;
+        margin-right: 35px;
+        font-family: 'Raleway', sans-serif;
+        list-style-type: none;
+        
+    }
+
+}
 
     /* Grand Ecran */
-    @media screen and (min-width:1200px){
-
+    @media screen and (min-width:1200px) {
+        #boutonBurger {
+            display: none;
     }
+
+    .header {
+        display: flex;
+        justify-content: space-between;
+        background-color:var(--secondColor);
+        height: 100px;
+        width: auto;
+        border-bottom: 1px solid var(--thirdColor);
+        font-family: 'Raleway', sans-serif;
+    }
+    #menusimple {
+        display:flex;
+        margin-right: 35px;
+        font-family: 'Raleway', sans-serif;
+        list-style-type: none;
+        
+    }
+
+}
 
 
 .title-contact{
@@ -96,3 +242,5 @@
 #submit:hover {
     transform: scale(1.1);
 }
+    
+
