@@ -1,0 +1,34 @@
+:root{
+    /*Logo,bouton hover:*/
+    --firstColor: #1ed760;
+    /*footer; header; burger menu:*/
+    --secondColor: #1b1b1b;
+    --thirdColor: #204033;
+    --container-width: 1200px;
+    }
+  
+
+    /* Tout Petit Ecran*/
+    @media screen and (max-width:576px) {
+
+    }
+
+    /* Petit Ecran*/
+    @media screen and (min-width:576px) and (max-width:767px) {
+
+    }
+
+    /* Medium Ecran*/
+    @media screen and (min-width:768px) and (max-width:991px) {
+
+    }
+
+    /* Large Ecran*/
+    @media screen and (min-width:992px) and (max-width:1199px) {
+
+    }
+
+    /* Grand Ecran */
+    @media screen and (min-width:1200px){
+
+    }
