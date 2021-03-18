@@ -25,5 +25,5 @@
      <li><a href="#">L'EQUIPE</a></li>
      <li><a href="form.php">CONTACT</a></li>
   </ul>
-
+  <script type="text/javascript" src="header"></script>
   </header>
