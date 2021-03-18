@@ -12,11 +12,17 @@
       type="image/png"
       href="https://i.ibb.co/vL5WMrb/shortcuticon.png"
     />
-
-    
   </head>
-
+  <a name="TopPage"></a>
   <?php require('header.php')?>
+  <body>
   <?php require('carroussel.php')?>
-  <script type="text/javascript" src="index.js"></script>
+
+
+  <div id="scrollUp">
+      <a href="#TopPage"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
+  </div>
+  
+  </body>
+  <script type="text/javascript" src="buttonUp.js"></script>
 </html>

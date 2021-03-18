@@ -264,3 +264,27 @@
     95% { left: -300%; }
     100% { left: -400%; }
 }
+
+.arrowUp{
+    width:44px;
+    height:44px;
+    position:relative;
+    border-radius: 20%;
+    z-index:10;
+    background-color: var(--secondColor);
+    opacity: 0.5;
+}
+
+#scrollUp{
+    position: fixed;
+    bottom : 10px;
+    border-radius: 20%;
+    display: none;
+    right: 30px;
+}
+
+.arrowUp:hover{
+    background-color: var(--firstColor);
+    transition : 0.3s;
+}
+
