@@ -18,7 +18,6 @@
   <body>
   <?php require('carroussel.php')?>
 
-
   <div id="scrollUp">
       <a href="#TopPage"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
   </div>
