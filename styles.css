@@ -4,31 +4,236 @@
     /*footer; header; burger menu:*/
     --secondColor: #1b1b1b;
     --thirdColor: #204033;
+    --card-color: #Ebf3f0;
     --container-width: 1200px;
-    }
-  
+    --police-size: 12px;
+    --police-font: 'Raleway', sans-serif;
 
-    /* Tout Petit Ecran*/
-    @media screen and (max-width:576px) {
-
-    }
-
-    /* Petit Ecran*/
-    @media screen and (min-width:576px) and (max-width:767px) {
-
+    /*---CARTES------------------*/
+    --card-width : 240px;
+    --card-img-height : 150px;
     }
 
-    /* Medium Ecran*/
-    @media screen and (min-width:768px) and (max-width:991px) {
+* {
+    margin: 0;
+    padding: 0;
+    font-size: var(--police-size);
+    font-family: var(--police-font);
+    box-sizing: border-box;
+    color: var(--thirdColor);
+    scroll-behavior: smooth;
+}
 
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    max-width: var(--container-width);
+    margin: 0 auto 0 auto;
+}
+
+.shop-header {
+    width: 80%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1.6rem;
+    padding-bottom: 2rem;
+}
+
+.shop-header h2 {
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+}
+
+.flex-buttons {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--firstColor);
+    width: 80%;
+    height: 4.5rem;
+    margin: 1.2rem 1rem 1.2rem 1rem;
+    border-radius: 4px;
+    font-size: 1.6rem;
+}
+
+.button:hover, .card-button:hover {
+    color: var(--card-color);
+    box-shadow: rgba(149, 157, 165, 0.5) 8px 8px 24px;
+    transition: all 0.4s;
+    cursor: pointer;
+}
+
+#rent {
+    background-color: #BED284;
+}
+
+#sell {
+    background-color: #DB848A;
+}
+
+.shop-section {
+    text-align: center;
+}
+
+.shop-section h2 {
+    font-size: 1.4rem;
+    padding: 1.6rem 0.5rem 4rem 0.5rem;
+}
+
+.shop-section h2:before {
+    content: '';
+    position: absolute;
+    transform: translateY(0.8rem) translateX(-8rem);
+    width: 90px;
+    border-bottom: #204033 solid 1px;
+}
+
+.shop-section h2:after {
+    content: '';
+    position: absolute;
+    transform: translateY(0.8rem) translateX(0.5rem);
+    width: 90px;
+    border-bottom: #204033 solid 1px;
+}
+
+/*start----- CARDS SECTION ----------------*/
+
+.flex-cards {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 3rem;
+}
+
+.card {
+    min-width: var(--card-width);
+    background-color: var(--card-color);
+    border-radius: 5px;
+    margin: 2rem 1rem 2.5rem 1rem;
+}
+
+.card:hover {
+    box-shadow: rgba(149, 157, 165, 0.5) 8px 8px 24px;
+    transition: all 0.2s;
+}
+
+.card-header {
+    height: var(--card-img-height);
+    width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.card-header img {
+    border-radius: 5px 5px 0 0;
+    width: var(--card-width);
+    height: var(--card-img-height);
+}
+
+.card-title, .card-price, .card-button {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-title {
+    padding-left: 1rem;
+    width: 100%;
+    text-align: start;
+    line-height: 1.6rem;
+}
+
+.card-body-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card-body-price .red{
+    color: red;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.card-body-price .green{
+    color: var(--firstColor);
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+
+.card-availability {
+    padding-left: 1rem;
+}
+
+.card-price {
+    text-align: end;
+    padding-right: 1rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.card-button {
+    background-color: var(--firstColor);
+    width: 60%;
+    margin: 1rem auto 1rem auto;
+    border-radius: 4px;
+    font-size: 1.1rem;
+}
+
+
+.rent-button {
+    background-color: #BED284;
+}
+
+/*end----- CARDS SECTION ----------------*/
+
+
+
+
+
+
+
+/* Tout Petit Ecran*/
+@media screen and (max-width:576px) {
+
+}
+
+/* Petit Ecran*/
+@media screen and (min-width:576px) /*and (max-width:768px)*/ {
+
+}
+
+/* Medium Ecran*/
+@media screen and (min-width:768px) /*and (max-width:991px)*/ {
+    .flex-cards {
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
     }
-
-    /* Large Ecran*/
-    @media screen and (min-width:992px) and (max-width:1199px) {
-
+    .flex-buttons {
+        flex-direction: row;
     }
+}
 
-    /* Grand Ecran */
-    @media screen and (min-width:1200px){
-
+/* Large Ecran*/
+@media screen and (min-width:992px) /*and (max-width:1199px)*/ {
+    .flex-cards {
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
+}
+
+/* Grand Ecran */
+@media screen and (min-width:1200px){
+
+}
