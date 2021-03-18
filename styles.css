@@ -32,3 +32,115 @@
     @media screen and (min-width:1200px){
 
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+section {
+    padding: 40px;
+}
+
+h2 {
+    color: var(--secondColor);
+    text-align: center;
+    border-bottom: 1px solid var(--secondColor);
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: var(--thirdColor);
+}
+
+h4 {
+    color: var(--firstColor);
+}
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px 30px 0 0;
+    padding-bottom: 10px;
+    max-width: 100%;
+    height: auto;
+}
+
+article {
+    border-bottom-style: dotted;
+}
+p {
+    text-align: justify;
+}
+
+#share {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: aliceblue;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 6px slategrey;
+
+}
+
+.twitter {
+    background-color: #00acee;
+    color: aliceblue;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 6px slategrey;
+}
+
+.link {
+    background-color: var(--firstColor);
+    color: aliceblue;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 6px slategrey;
+}
+
