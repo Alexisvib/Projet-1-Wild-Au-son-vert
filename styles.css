@@ -433,6 +433,90 @@ li {
 
 /************************END BOUTIQUE**********************************/
 
+/************************* Event ***************************************/
+
+#events {
+    padding: 40px;
+}
+
+#events h3, #events h4 {
+    padding-top: 2rem;
+}
+
+#events h2 {
+    color: var(--secondColor);
+    text-align: center;
+    border-bottom: 1px solid var(--secondColor);
+    padding-bottom: 10px;
+    font-size: x-large;
+}
+
+#events h3 {
+    color: var(--thirdColor);
+    font-size: large;
+}
+
+#events h4 {
+    color: var(--firstColor);
+    font-size: medium;
+}
+
+#events img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 30px 30px 0 0;
+    padding-bottom: 20px;
+    max-width: 100%;
+    height: auto;
+}
+
+article {
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
+}
+#events p {
+    text-align: justify;
+}
+
+#share {
+    display: flex;
+    justify-content: flex-end;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.facebook {
+    background-color: #3b5998;
+    color: aliceblue;
+    margin-right: 5px;
+    margin-left: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 6px slategrey;
+
+}
+
+.twitter {
+    background-color: #00acee;
+    color: aliceblue;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 6px slategrey;
+}
+
+.link {
+    background-color: var(--firstColor);
+    color: aliceblue;
+    margin-right: 5px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 6px 6px 6px slategrey;
+}
+
+/********************END EVENT**********************************************/
+
 
 /**********************MEDIA QUERIES***********************************/
  /* Tout Petit Ecran*/
@@ -526,15 +610,3 @@ li {
 }
 
 /********************END MEDIA QUERIES**********************************************/
-
-
-
-
-
-
-
-
-
-
-
-
