@@ -1,192 +1,353 @@
-:root{
+/*--------------------------------------------------------------------------------------global*/
+
+:root {
     /*Logo,bouton hover:*/
     --firstColor: #1ed760;
     /*footer; header; burger menu:*/
     --secondColor: #1b1b1b;
     --thirdColor: #859684;
     --container-width: 1200px;
-    }
+  }
   
-*{
+  * {
     margin: 0px;
     padding: 0px;
-    font-family: 'Raleway', sans-serif;
-}
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        background-color:var(--secondColor);
-        height: 80px;
-        width: auto;
-        border-bottom: 1px solid var(--thirdColor);
-        font-family: 'Raleway', sans-serif;
-    }
-
-    #boutonBurger {
-        height: 20px;
-        margin: 30px 20px 0 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        border: none;
-        color: var(--firstColor);
-        text-align: center;
-        text-decoration: none;
-        display: flex;
-        font-size: 30px;
-        font-style: railway;
-        cursor: pointer;
-        font-family: 'Raleway', sans-serif;
-    }
-
-    #boutonBurger:hover {
-        color: var(--thirdColor);
-        text-shadow: 2px 2px 5px rgb(0, 0, 0);
-      }
-
-    #boutonBurger:active {
-        color: var(--thirdColor);
-        text-shadow: 2px 2px 5px rgb(0, 0, 0);
-        
-      }
-    
-      #menusimple {  
-        display: none;
-        justify-content: flex-end;
-        margin-right: 35px;
-        font-family: 'Raleway', sans-serif;
-    
-    }
-
-    #menuBurger{
-        display: none;
-        float: right;
-        background-color: var(--secondColor);
-        font-family: 'Raleway', sans-serif;
-        border-radius: 0px 0px 0 10px;
-        animation: fadein 1s;
-    }
+    font-family: "Raleway", sans-serif;
+  }
   
-@keyframes fadein {
+  /*--------------------------------------------------------------------------------------header*/
+  
+  .header {
+    display: flex;
+    position: fixed;
+    z-index: 2;
+    justify-content: space-between;
+    background-color: var(--secondColor);
+    height: 80px;
+    width: auto;
+    border-bottom: 1px solid var(--thirdColor);
+    font-family: "Raleway", sans-serif;
+    
+  }
+  
+  #boutonBurger {
+    height: 20px;
+    margin: 30px 20px 0 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: none;
+    color: var(--firstColor);
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: "Raleway", sans-serif;
+  }
+
+  #boutonBurger:hover {
+    color: var(--thirdColor);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  }
+  
+  #boutonBurger:active {
+    color: var(--thirdColor);
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+  }
+  
+  #menusimple {    
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 35px;
+    font-family: "Raleway", sans-serif;
+  }
+  
+  #menuBurger {
+    
+    position: fixed;
+    right: 0px;
+    z-index: 2;
+    display: none;
+    width: 180px;
+    background-color:  rgb(27,27,27,0.9);
+    font-family: "Raleway", sans-serif;
+    border-radius: 0px 0px 0 5px;
+    box-shadow: black 0 2px 5px 0;
+    animation-duration: 2s;
+    animation-name: glissement;
+    
+  }
+
+  .hr-burger {
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    margin-left: 15%;
+    width: 75%;
+    height: 1px;
+    opacity: 10%;
+  }
+  
+  #ul-header-footer {
+    display: flex;
+    align-items: center;
+  }
+  #header-footer {
+    list-style-type: none;
+    padding: 10px;
+  }
+  a:hover {
+    color: var(--firstColor);
+    font-size: x-large;
+    animation-name: zoom;
+    animation-duration: 200ms;
+    height: 40px;
+    width: 90px;
+  }
+  a {
+    text-decoration: none;
+    color: var(--thirdColor);
+  }
+  
+  @keyframes fadein {
     from {
-        opacity:0;
+      opacity: 0;
     }
     to {
-        opacity:1;
+      opacity: 1;
     }
-}
-    ul {
-        display: flex;
-        align-items: center;
+  }
+  @keyframes glissement {
+    from {
+      margin-top: -350px;
+      
     }
-    li {
-        list-style-type: none;
-        padding: 10px;
+  
+    to {
+      margin-top: 0px;
+      
     }
-    a:hover {
-        color: var(--firstColor);
+  }
+  @keyframes zoom {
+    from {
+      font-size: medium;
+      
     }
-    a {
-        text-decoration: none;
-        color: var(--thirdColor);
+  
+    to {
+      font-size: x-large;
+      
     }
+  }
+  
+  /*--------------------------------------------------------------------------------------footer*/
+  .footer {
+    display: flex;
+    justify-content: space-around;
+    position:fixed;
+    width: 100%;
+    height: 150px;
+    background-color: var(--secondColor);
+    position: fixed;
+    bottom: 0;
+    font-family: "Raleway", sans-serif;
+    border-top: 1px solid var(--thirdColor);
+    z-index: 1;
+  }
 
-     /* Tout Petit Ecran*/
-     @media screen and (max-width:576px) {
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
-    }
+  .espace-footer{
+    z-index: 1;
+    height: 150px;
+  }
 
-    /* Petit Ecran*/
-    @media screen and (min-width:576px) and (max-width:768px) {
-        ul {
-            display: flex;
-            flex-direction: column;
-        }
-        
-    }
-
-    /* Medium Ecran*/
-    @media screen and (min-width:768px) and (max-width:991px) {
-        #boutonBurger {
-            display: none;
-    }
-
-    .header {
-        display: flex;
-        justify-content: space-between;
-        background-color:var(--secondColor);
-        height: 100px;
-        width: auto;
-        border-bottom: 1px solid var(--thirdColor);
-        font-family: 'Raleway', sans-serif;
-    }
-    #menusimple {
-        display:flex;
-        margin-right: 35px;
-        font-family: 'Raleway', sans-serif;
-        list-style-type: none;
-        
-    }
+  .box-footer-left {
+    display: block;
+    flex-direction: column;
     
-}
+  }
+  .menu-footer-text {
+    display: block;
+    width: 200px;
+    justify-content: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+    scrollbar-width: thin;  
+    scrollbar-color: #1b1b1b #1b1b1b;  
+    height: 40px;
+    margin-top: 10px;
 
-    /* Large Ecran*/
-    @media screen and (min-width:991px) and (max-width:1200px) {
-        #boutonBurger {
-            display: none;
+  }
+  .Logotype-footer-box {
+  display: flex;
+  margin-left: 7px;
+  margin-top: 40px;
+  width: 70px;
+  
+  }
+  .Logotype-texte-footer{
+    width: 70px;
+    
+  }
+
+  .logotype-footer{
+    display: none;
+    width: 40px;
+  }
+
+  .infos-footer-box{
+    justify-content: left;
+  }
+
+  .icone-résaux-sociaux{
+    display: block;
+    
+  }
+  .icone-footer {
+    height: 40px;
+    width: 40px;
+  }
+  
+  /*--------------------------------------------------------------------------------------Media queries*/
+  
+  /* Tout Petit Ecran*/
+  @media screen and (max-width: 576px) {
+    .espace-header {
+      z-index: 1;
+      height: 81px;
     }
-
     .header {
-        display: flex;
-        justify-content: space-between;
-        background-color:var(--secondColor);
-        height: 100px;
-        width: auto;
-        border-bottom: 1px solid var(--thirdColor);
-        font-family: 'Raleway', sans-serif;
+        margin-top: -81px;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
+    #ul-header-footer{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  
+  /* Petit Ecran*/
+  @media screen and (min-width: 576px) and (max-width: 768px) {
+    .espace-header {
+      z-index: 1;
+      height: 81px;
+    }
+    .header {
+        margin-top: -81px;
+        position: fixed;
+        z-index: 100;
+        width: 100%;
+    }
+    #ul-header-footer {
+      display: flex;
+      flex-direction: column;
+
+    }
+  }
+  
+  /* Medium Ecran*/
+  @media screen and (min-width: 768px) {
+    #boutonBurger {
+      display: none;
+    }
+  
+    .header {
+      display: flex;
+      margin-top: -100px;
+      justify-content: space-between;
+      background-color: var(--secondColor);
+      height: 100px;
+      width: 100%;
+      border-bottom: 1px solid var(--thirdColor);
+      font-family: "Raleway", sans-serif;
+    }
+  
+    #menusimple {
+      display: flex;
+      margin-right: 35px;
+      font-family: "Raleway", sans-serif;
+      list-style-type: none;
+    }
+  
+    #menuBurger {
+      position: fixed;
+      top: -1000px;
+    }
+    .espace-header {
+      z-index: 1;
+      height: 100px;
+    }
+  }
+  
+  /* Large Ecran*/
+  @media screen and (min-width: 991px){
+    #boutonBurger {
+      display: none;
+    }
+  
+    .header {
+      margin-top: -100px;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--secondColor);
+      height: 100px;
+      width: 100%;
+      border-bottom: 1px solid var(--thirdColor);
+      font-family: "Raleway", sans-serif;
     }
     #menusimple {
-        display:flex;
-        margin-right: 35px;
-        font-family: 'Raleway', sans-serif;
-        list-style-type: none;
-        
+      display: flex;
+      margin-right: 35px;
+      font-family: "Raleway", sans-serif;
+      list-style-type: none;
     }
-
-}
-
-    /* Grand Ecran */
-    @media screen and (min-width:1200px) {
-        #boutonBurger {
-            display: none;
+    #menuBurger {
+      position: absolute;
+      top: -1000px;
     }
-
+    .espace-header {
+      z-index: 1;
+      height: 100px;
+    }
+  }
+  
+  /* Grand Ecran */
+  @media screen and (min-width: 1200px) {
+    #boutonBurger {
+      display: none;
+    }
+  
     .header {
-        display: flex;
-        justify-content: space-between;
-        background-color:var(--secondColor);
-        height: 100px;
-        width: auto;
-        border-bottom: 1px solid var(--thirdColor);
-        font-family: 'Raleway', sans-serif;
+      margin-top: -100px;
+      display: flex;
+      justify-content: space-between;
+      background-color: var(--secondColor);
+      height: 100px;
+      width: 100%;
+      border-bottom: 1px solid var(--thirdColor);
+      font-family: "Raleway", sans-serif;
     }
     #menusimple {
-        display:flex;
-        margin-right: 35px;
-        font-family: 'Raleway', sans-serif;
-        list-style-type: none;
-        
+      display: flex;
+      margin-right: 35px;
+      font-family: "Raleway", sans-serif;
+      list-style-type: none;
     }
-
-}
-
-
+    #menuBurger {
+      position: absolute;
+      top: -1000px;
+    }
+    .espace-header {
+      z-index: 1;
+      height: 100px;
+    }
+  }
+/*--------------------------------------------------------------------------------------form*/
 .title-contact{
     text-align: center;
+    margin-top:30px;
 }
 
 .Bloc-container{
@@ -199,6 +360,7 @@
 }
 
 .container-form{
+    margin-top: 25px;
     flex:4;
     display:flex;
     flex-direction : column;
@@ -209,9 +371,9 @@
 .form-style{
     justify-content: space-around;
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 30px;
     width:100%;
-    min-width: 225px;
+    min-width: 225px;;
 }
 
 .form-style input{
@@ -242,5 +404,47 @@
 #submit:hover {
     transform: scale(1.1);
 }
-    
 
+.container-caroussel{
+    overflow: unset;
+    display:flex;
+    height:227px;
+}
+
+.carroussel-bloc-around{
+    flex:2%;
+}
+
+.carroussel-bloc{
+    flex:96%;
+    max-width: var(--container-width);
+    overflow:hidden;
+}
+
+.carroussel-bloc figure{
+    position:relative;
+    width:500%;
+    margin:0;
+    padding:0;
+    font-size : 0;
+    text-align: left;
+    animation: 28s slide infinite;
+}
+
+.carroussel-bloc figure img{
+    width: 20%;
+    height:auto;
+    float:left;
+}
+
+        @keyframes slidy {
+            0% { left: 0%; }
+            20% { left: 0%; }
+            25% { left: -100%; }
+            45% { left: -100%; }
+            50% { left: -200%; }
+            70% { left: -200%; }
+            75% { left: -300%; }
+            95% { left: -300%; }
+            100% { left: -400%; }
+        }
