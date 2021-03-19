@@ -15,7 +15,7 @@
 <?php require ('header.php') ?>
 <div class="main-container">
      <div class="shop-header">
-         <h2>BOUTIQUE</h2>
+         <h2 class="row-title">BOUTIQUE</h2>
          <div class="flex-buttons">
              <a href="#buy-section" class="button" >ACHETER</a>
              <a href="#rent-section" class="button" id="rent">LOUER</a>
@@ -24,7 +24,7 @@
      </div>
 
     <section class="shop-section">
-        <h2 id="buy-section">ACHAT</h2>
+        <h2 id="buy-section" class="row-title">ACHAT</h2>
         <div class="flex-cards">
             <?php foreach ($cards as $cardData): ?>
                 <?php if ($cardData['status'] === 'achat'): ?>
@@ -44,7 +44,7 @@
     </section>
 
     <section class="shop-section">
-         <h2 id="rent-section">LOCATION</h2>
+         <h2 id="rent-section" class="row-title">LOCATION</h2>
          <div class="flex-cards">
              <?php foreach ($cards as $cardData): ?>
                  <?php if ($cardData['status'] === 'location'): ?>

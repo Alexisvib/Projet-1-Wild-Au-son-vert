@@ -258,7 +258,53 @@ li {
 
 /**********END BOUTON HAUT DE PAGE*****************/
 
+/*************** HOMEPAGE ******************************/
+.selection-products{
+    text-align: center;
+}
 
+
+.title-homepage{
+    font-size: 1.4rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+.testimony{
+    text-align: center;
+}
+
+
+.testimonycard{
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    width: 240px;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: rgba(149, 157, 165, 0.5) 8px 8px 24px;
+    height: 200px;
+    margin: 2rem 1rem 2.5rem 1rem;
+}
+
+.card-text{
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+    padding-right : 15px;
+    padding-left : 15px;
+    text-align: justify;
+    font-size: 14px;
+}
+
+.card-name{
+    text-align: right;
+    margin-right: 15px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+/*******************************************************************************/
 
 /**************BOUTIQUE************************************/
 
@@ -324,7 +370,22 @@ li {
     font-size: 1.4rem;
     padding: 1.6rem 0.5rem 4rem 0.5rem;
 }
+.row-title:before{
+    content: '';
+    position: absolute;
+    transform: translateY(0.8rem) translateX(-8rem);
+    width: 90px;
+    border-bottom: #204033 solid 1px;
+}
 
+.row-title:after{
+    content: '';
+    position: absolute;
+    transform: translateY(0.8rem) translateX(0.5rem);
+    width: 90px;
+    border-bottom: #204033 solid 1px;
+}
+/*
 .shop-section h2:before {
     content: '';
     position: absolute;
@@ -339,7 +400,7 @@ li {
     transform: translateY(0.8rem) translateX(0.5rem);
     width: 90px;
     border-bottom: #204033 solid 1px;
-}
+} */
 
     /*start----- CARDS SECTION ----------------*/
 
@@ -422,6 +483,7 @@ li {
     margin: 1rem auto 1rem auto;
     border-radius: 4px;
     font-size: 1.1rem;
+    text-align: center;
 }
 
 
@@ -610,3 +672,5 @@ article {
 }
 
 /********************END MEDIA QUERIES**********************************************/
+
+
