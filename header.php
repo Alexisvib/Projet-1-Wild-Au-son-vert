@@ -9,7 +9,7 @@
       <ul id="menusimple">
      <li><a href="index.php">ACCUEIL</a></li>
      <li><a href="shop.php">BOUTIQUE</a></li>
-     <li><a href="#">EVENEMENTS</a></li>
+     <li><a href="event.php">EVENEMENTS</a></li>
      <li><a href="#">L'EQUIPE</a></li>
      <li><a href="form.php">CONTACT</a></li>
   </ul>
@@ -21,7 +21,7 @@
   <ul id="menuBurger">
      <li><a href="index.php">ACCUEIL</a></li>
      <li><a href="shop.php">BOUTIQUE</a></li>
-     <li><a href="#">EVENEMENTS</a></li>
+     <li><a href="event.php">EVENEMENTS</a></li>
      <li><a href="#">L'EQUIPE</a></li>
      <li><a href="form.php">CONTACT</a></li>
   </ul>
