@@ -22,7 +22,6 @@
 
 <a name="TopPage"></a>
 <?php require('header.php')?>
-<a name="TopPage"></a>
 <?php require('carroussel.php')?>
 
 <div class="main-container">

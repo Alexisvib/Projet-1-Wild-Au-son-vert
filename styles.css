@@ -385,22 +385,6 @@ li {
     width: 90px;
     border-bottom: #204033 solid 1px;
 }
-/*
-.shop-section h2:before {
-    content: '';
-    position: absolute;
-    transform: translateY(0.8rem) translateX(-8rem);
-    width: 90px;
-    border-bottom: #204033 solid 1px;
-}
-
-.shop-section h2:after {
-    content: '';
-    position: absolute;
-    transform: translateY(0.8rem) translateX(0.5rem);
-    width: 90px;
-    border-bottom: #204033 solid 1px;
-} */
 
     /*start----- CARDS SECTION ----------------*/
 
