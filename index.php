@@ -21,10 +21,11 @@
 <body>
 
 <a name="TopPage"></a>
-<?php require('header.php')?>
+ <?php require('header.php')?> 
 <?php require('carroussel.php')?>
 
 <div class="main-container">
+
 
     <div class="selection-products">
         <div><h2 class="row-title title-homepage">Les Nouveautés</h2></div>
@@ -98,7 +99,7 @@
 <div id="scrollUp">
     <a href="#TopPage"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
 </div>
-
+<?php require("footer.php") ?>
 </body>
 </html>
 

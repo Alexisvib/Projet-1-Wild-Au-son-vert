@@ -70,6 +70,8 @@
 <div id="scrollUp">
     <a href="#TopPage"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
 </div>
-</body>
+<?php require("footer.php") ?>
 <script type="text/javascript" src="buttonUp.js"></script>
+</body>
+
 </html>

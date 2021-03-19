@@ -35,8 +35,9 @@
             </form>
             <div class="Bloc"></div>
     </div>
+    <?php require("footer.php") ?>
+    <script src="form.js"></script>
   </body>
-  <script src="form.js"></script>
 </html>
 
 

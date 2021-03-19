@@ -76,5 +76,6 @@
         </p>
     </article>
 </section>
+<?php require("footer.php") ?>
 </body>
 </html>
