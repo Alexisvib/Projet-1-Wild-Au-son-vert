@@ -178,7 +178,8 @@ a {
     }
   }
   /******END HEADER***************************************/
-  /*--------------------------------------------------------------------------------------footer*/
+  
+  /******FOOTER**********/
   .footer {
     display: flex;
     justify-content: space-around;
@@ -243,6 +244,7 @@ a {
     width: 40px;
   }
   
+ /******END FOOTER**********/
  
 /********FORM****************************************/
 
@@ -690,107 +692,7 @@ article {
 
 
 /**********************MEDIA QUERIES***********************************/
- /*--------------------------------------------------------------------------------------Media queries*/
-  
- 
-  
-  /* Medium Ecran
-  @media screen and (min-width: 768px) {
-    #boutonBurger {
-      display: none;
-    }
-  
-    .header {
-      display: flex;
-      margin-top: -100px;
-      justify-content: space-between;
-      background-color: var(--secondColor);
-      height: 100px;
-      width: 100%;
-      border-bottom: 1px solid var(--thirdColor);
-      font-family: "Raleway", sans-serif;
-    }
-  
-    #menusimple {
-      display: flex;
-      margin-right: 35px;
-      font-family: "Raleway", sans-serif;
-      list-style-type: none;
-    }
-  
-    #menuBurger {
-      position: fixed;
-      top: -1000px;
-    }
-    .espace-header {
-      z-index: 1;
-      height: 100px;
-    }
-  }
-  
-  
-  @media screen and (min-width: 991px){
-    #boutonBurger {
-      display: none;
-    }
-  
-    .header {
-      margin-top: -100px;
-      display: flex;
-      justify-content: space-between;
-      background-color: var(--secondColor);
-      height: 100px;
-      width: 100%;
-      border-bottom: 1px solid var(--thirdColor);
-      font-family: "Raleway", sans-serif;
-    }
-    #menusimple {
-      display: flex;
-      margin-right: 35px;
-      font-family: "Raleway", sans-serif;
-      list-style-type: none;
-    }
-    #menuBurger {
-      position: absolute;
-      top: -1000px;
-    }
-    .espace-header {
-      z-index: 1;
-      height: 100px;
-    }
-  }
-  
-  /* Grand Ecran 
-  @media screen and (min-width: 1200px) {
-    #boutonBurger {
-      display: none;
-    }
-  
-    .header {
-      margin-top: -100px;
-      display: flex;
-      justify-content: space-between;
-      background-color: var(--secondColor);
-      height: 100px;
-      width: 100%;
-      border-bottom: 1px solid var(--thirdColor);
-      font-family: "Raleway", sans-serif;
-    }
-    #menusimple {
-      display: flex;
-      margin-right: 35px;
-      font-family: "Raleway", sans-serif;
-      list-style-type: none;
-    }
-    #menuBurger {
-      position: absolute;
-      top: -1000px;
-    }
-    .espace-header {
-      z-index: 1;
-      height: 100px;
-    }
-  }*/
+
  /* Tout Petit Ecran*/
  @media screen and (max-width:576px) {
   .espace-header {
