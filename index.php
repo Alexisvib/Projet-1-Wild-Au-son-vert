@@ -1,4 +1,5 @@
 <?php require ('shopData.php') ?>
+<?php require ('indexData.php') ?>
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -29,27 +30,19 @@
     <div class="selection-products">
         <div><h2 class="row-title title-homepage">Les Nouveautés</h2></div>
         <div class="flex-cards">
+            <?php for ( $i = 0 ; $i < 2 ; $i++ ): ?>
             <div class="card">
                 <div class="card-header">
-                    <img src=<?= $cards[0]['picture']?> alt=<?=$cards[0]['instrument']?>>
+                    <img src=<?= $cards[$i]['picture']?> alt=<?=$cards[$i]['instrument']?>>
                 </div>
                 <div class="card-body">
-                    <div class="card-title"><?= $cards[0]['instrument'] . '<br>' . $cards[0]['model']?></div>
-                    <div class="card-price"><?= $cards[0]['price']?></div>
+                    <div class="card-title"><?= $cards[$i]['instrument'] . '<br>' . $cards[$i]['model']?></div>
+                    <div class="card-price"><?= $cards[$i]['price']?></div>
                     <div class="card-button">ACHETER</div>
                 </div>
             </div>
+            <?php endfor; ?>
 
-            <div class="card">
-                <div class="card-header">
-                    <img src=<?= $cards[1]['picture']?> alt=<?=$cards[1]['instrument']?>>
-                </div>
-                <div class="card-body">
-                    <div class="card-title"><?= $cards[1]['instrument'] . '<br>' . $cards[1]['model']?></div>
-                    <div class="card-price"><?= $cards[1]['price']?></div>
-                    <div class="card-button">ACHETER</div>
-                </div>
-            </div>
 
             <div class="card">
                 <div class="card-header">
@@ -71,30 +64,18 @@
         <div><h2 class="row-title title-homepage">Témoignages</h2></div>
 
         <div class="flex-cards">
-            <div class="testimonycard">
-                <div class="testimony-content">
-                    <p class="card-text">Lodo porta a sit amet nulla. Ut dapibus accumsan erat, vitae imperdiet neque. Donec mi lorem, efficitur ut erat vitae, posuere interdum nisl. Aliquam non lacinia nisl, a dapibus diam.</p>
-                    <p class="card-name">Anna</p>
+            <?php foreach ($testimonies as $testimonyData): ?>
+                <div class="testimonycard">
+                    <div class="testimony-content">
+                        <p class="card-text"><?= $testimonyData['message'] ?></p>
+                        <p class="card-name"><?= $testimonyData['name'] ?></p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="testimonycard">
-                <div class="testimony-content">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus congue scelerisque varius. Aliquam non lacinia nisl, a dapibus diam.</p>
-                    <p class="card-name">Guillaume</p>
-                </div>
-            </div>
-
-            <div class="testimonycard">
-                <div class="testimony-content">
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.isl, a dapibus diam.</p>
-                    <p class="card-name">Quentin</p>
-                </div>
-            </div>
-
+            <?php endforeach; ?>
         </div>
     </section>
 </div>
+
 <div id="scrollUp">
     <a href="#TopPage"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
 </div>
