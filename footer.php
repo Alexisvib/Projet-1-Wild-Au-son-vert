@@ -1,3 +1,6 @@
+    <div id="scrollUp">
+        <a href="#espace-header"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
+    </div>
 
   <footer class="footer">
   <div class="espace-footer"></div>
@@ -58,4 +61,5 @@
         class="icone-footer"
     /></a>
   </div>
+      <script type="text/javascript" src="buttonUp.js"></script>
 </footer>
