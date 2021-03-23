@@ -166,27 +166,7 @@ li {
   }
 }
   /******END HEADER***************************************/
-  
-
-  #menuBurger {
-    
-    position: fixed;
-    right: 0px;
-    z-index: 2;
-    display: none;
-    width: 180px;
-    background-color:  rgba(27,27,27,0.9);
-    font-family: "Raleway", sans-serif;
-    border-radius: 0px 0px 0 5px;
-    box-shadow: black 0 2px 5px 0;
-    animation-duration: 2s;
-    animation-name: glissement;
-    
-  }
-
-  .hr-burger {
-    margin: 10px 0px 10px 0px;
-  }
+ 
 
   /******FOOTER**********/
   .footer {
