@@ -52,6 +52,9 @@ a {
 /******END PROPRIETES GENERALES**********/
 
 /******HEADER**********/
+.logotype {
+  height: 80px;
+}
 
 .header {
   display: flex;
@@ -719,6 +722,10 @@ article {
     justify-content: space-between;
     background-color: white;
     height: 100px;
+  }
+
+  .logotype {
+    height: 110px;
   }
 
   #menuBurger {
