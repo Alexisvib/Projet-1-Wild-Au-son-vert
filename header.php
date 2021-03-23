@@ -1,6 +1,6 @@
 <header>
 
-  <div class="espace-header"></div>
+  <div class="espace-header" id="espace-header"></div>
   <div class="header">
     <img src="https://i.ibb.co/M7yQGWV/Logo-text.png" alt="Logo" class="logotype" />
     <ul id="menusimple">
