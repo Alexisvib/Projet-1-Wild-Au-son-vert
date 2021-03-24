@@ -5,7 +5,7 @@ $titlePage = $cards[$newKey]['instrument'] . ' - Au Son Vert';
 $metadescriptionPage = 'Cette page vous permet de commander l\'instrument ' . $cards[$newKey]['instrument'] ;
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <?php require ("header.php")?>
 
     <section class="main-container shop-details-section">

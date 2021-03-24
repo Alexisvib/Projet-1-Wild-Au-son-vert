@@ -5,7 +5,7 @@ $titlePage = 'Commande validée de ' . $cards[$keyCommand]['instrument'];
 $metadescriptionPage = 'Merci de votre achat pour l\'instrument : ' . $cards[$keyCommand]['instrument'] ;
 ?>
 <!DOCTYPE html>
-<html>
+<html lang="fr">
     <?php require ('header.php')?>
     <head>
         <meta charset="UTF-8">
