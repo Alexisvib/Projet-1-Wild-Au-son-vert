@@ -12,7 +12,9 @@
 
 </head>
 <body>
+<a name="TopPage"></a>
 <?php require ('header.php') ?>
+
 <div class="main-container">
      <div class="shop-header">
          <h2>BOUTIQUE</h2>
@@ -26,16 +28,23 @@
     <section class="shop-section">
         <h2 id="buy-section">ACHAT</h2>
         <div class="flex-cards">
-            <?php foreach ($cards as $cardData): ?>
+            <?php
+            function buyFilter($card)
+            {
+                if ($card['status'] === 'achat') {return $card;}
+            }
+            $cardsBuy = array_filter($cards,"buyFilter");
+            ?>
+            <?php foreach ($cardsBuy as $key => $cardData): ?>
                 <?php if ($cardData['status'] === 'achat'): ?>
                     <div class="card">
                         <div class="card-header">
                             <img src=<?=$cardData['picture']?> alt=<?=$cardData['instrument']?>>
                         </div>
                         <div class="card-body">
-                            <div class="card-title"><?= $cardData['instrument'] . '<br>' . $cardData['model']?></div>
+                            <div class="card-title"><?= $cardData['instrument'] . '<br>' . 'Modèle ' . $cardData['model']?></div>
                             <div class="card-price"><?= $cardData['price']?></div>
-                            <div class="card-button">ACHETER</div>
+                            <a href="shopDetails.php?key=<?=$key?>"><div class="card-button">ACHETER</div></a>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -46,25 +55,39 @@
     <section class="shop-section">
          <h2 id="rent-section">LOCATION</h2>
          <div class="flex-cards">
-             <?php foreach ($cards as $cardData): ?>
+             <?php
+             function rentFilter($card)
+             {
+                 if ($card['status'] === 'location') {return $card;}
+             }
+             $cardsRent = array_filter($cards,"rentFilter");
+             ?>
+             <?php foreach ($cardsRent as $key => $cardData): ?>
                  <?php if ($cardData['status'] === 'location'): ?>
                      <div class="card">
                          <div class="card-header">
                              <img src=<?=$cardData['picture']?> alt=<?=$cardData['instrument']?>>
                          </div>
                          <div class="card-body">
-                             <div class="card-title"><?= $cardData['instrument'] . '<br>' . $cardData['model']?></div>
+                             <div class="card-title"><?= $cardData['instrument'] . '<br>' . 'Modèle ' . $cardData['model']?></div>
                              <div class="card-body-price">
                                  <div class="card-availability <?= $cardData['available'] ? 'green' : 'red'?>"><?= $cardData['available'] ? '✅ Disponible' : '❌ Indisponible'?></div>
                                  <div class="card-price"><?= $cardData['price']?> /jour</div>
                              </div>
-                             <div class="card-button rent-button">LOCATION</div>
+                             <a href="shopDetails.php?key=<?=$key?>"><div class="card-button rent-button">LOCATION</div></a>
                          </div>
                      </div>
                  <?php endif; ?>
              <?php endforeach; ?>
          </div>
      </section>
+
+    <section class="shop-section sell-section">
+        <h2 id="sell-section">VENTE</h2>
+        <p class="sub-description">Vous souhaitez vendre un de vos instruments de musique ? Nous vous les rachetons afin de leur donner une seconde vie !</p>
+        <p class="sub-description">Vous pouvez nous contacter afin de discuter du prix de rachat dans la rubrique <a
+                    href="form.php">CONTACT</a></p>
+    </section>
 </div>
 
 <div id="scrollUp">
