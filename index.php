@@ -24,7 +24,7 @@ require('carroussel.php');
                     <div class="card-body">
                         <div class="card-title"><?= $cards[$i]['instrument'] . '<br>' . $cards[$i]['model'] ?></div>
                         <div class="card-price"><?= $cards[$i]['price'] ?></div>
-                        <div class="card-button">ACHETER</div>
+                        <a href="shopDetails.php?key=<?=$i?>"><div class="card-button">ACHETER</div></a>
                     </div>
                 </div>
             <?php endfor; ?>
@@ -40,7 +40,7 @@ require('carroussel.php');
                         <div class="card-availability <?= $cards[3]['available'] ? 'green' : 'red' ?>"><?= $cards[3]['available'] ? '✅ Disponible' : '❌ Indisponible' ?></div>
                         <div class="card-price"><?= $cards[3]['price'] ?> /jour</div>
                     </div>
-                    <div class="card-button rent-button">LOCATION</div>
+                    <a href="shopDetails.php?key=<?=3?>"><div class="card-button rent-button">LOCATION</div></a>
                 </div>
             </div>
         </div>
@@ -60,6 +60,7 @@ require('carroussel.php');
             <?php endforeach; ?>
         </div>
     </section>
+
 </div>
 
 <?php require("footer.php") ?>

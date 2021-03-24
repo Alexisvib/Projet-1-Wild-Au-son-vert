@@ -1,13 +1,12 @@
-    <div id="scrollUp">
-        <a href="#espace-header"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
-    </div>
+<div id="scrollUp">
+    <a href="#espace-header"><img src="assets/arrow-circle-up.png" alt="Flèche pour remonter en haut de page" class="arrowUp"></a>
+</div>
 
-    <footer class="footer">
+<footer class="footer">
+
   <div class="espace-footer"></div>
 
- 
   <div class=footer-box>
-
 
     <menu class="box-menu">
       <ul class="menu-footer-text-left">
@@ -32,20 +31,22 @@
       </ul>
     </div>
 
-  <div class="logo-icone-box">
-    <div class="icone-box">
-      <a href="https://i.ibb.co/H7gZr8d/inico.png">
-        <img src="https://i.ibb.co/tXpm4Ht/fico.png" alt="facebook-icone" class="icone-footer" /></a>
-      <a href="https://i.ibb.co/H7gZr8d/inico.png">
-        <img src="https://i.ibb.co/bBqWHfz/twico.png" alt="tweeter-icone" class="icone-footer" /></a>
+    <div class="logo-icone-box">
+      <div class="icone-box">
+        <a href="https://i.ibb.co/H7gZr8d/inico.png">
+          <img src="https://i.ibb.co/tXpm4Ht/fico.png" alt="facebook-icone" class="icone-footer" /></a>
+        <a href="https://i.ibb.co/H7gZr8d/inico.png">
+          <img src="https://i.ibb.co/bBqWHfz/twico.png" alt="tweeter-icone" class="icone-footer" /></a>
 
-      <a href="https://i.ibb.co/H7gZr8d/inico.png">
-        <img src="https://i.ibb.co/H7gZr8d/inico.png" alt="instagram-icone" class="icone-footer" /></a>
+        <a href="https://i.ibb.co/H7gZr8d/inico.png">
+          <img src="https://i.ibb.co/H7gZr8d/inico.png" alt="instagram-icone" class="icone-footer" /></a>
+      </div>
+
+      <a href="index.php">
+        <img src="https://i.ibb.co/1MQPrBx/Logotype-texte.png" alt="Logotype-texte" class="Logotype-texte-footer" />
+      </a>
     </div>
 
-    <a href="index.php">
-      <img src="https://i.ibb.co/1MQPrBx/Logotype-texte.png" alt="Logotype-texte" class="Logotype-texte-footer" /></a>
-  </div>
   </div>
       <script type="text/javascript" src="buttonUp.js"></script>
 </footer>

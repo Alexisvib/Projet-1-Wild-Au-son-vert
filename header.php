@@ -1,19 +1,18 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <title><?= $titlePage ?></title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,400&display=swap"
+          rel="stylesheet">
+    <meta name="description" content="<?= $metadescriptionPage ?>">
+    <meta name="keywords" content="keywords,here">
+    <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/vL5WMrb/shortcuticon.png"/>
+</head>
+<body>
+
 <header>
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width,initial-scale=1">
-        <link rel="stylesheet" href="styles.css" type="text/css">
-        <title><?= $titlePage ?></title>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;1,400&display=swap"
-              rel="stylesheet">
-        <meta name="description" content="<?= $metadescriptionPage ?>">
-        <meta name="keywords" content="keywords,here">
-        <link rel="shortcut icon" type="image/png" href="https://i.ibb.co/vL5WMrb/shortcuticon.png"/>
-    </head>
-    <body>
-
     <div class="espace-header" id="espace-header"></div>
     <div class="header">
         <img src="https://i.ibb.co/M7yQGWV/Logo-text.png" alt="Logo" class="logotype"/>

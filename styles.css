@@ -176,6 +176,7 @@ li {
  
 
   /******FOOTER**********/
+
   .footer {
     margin-bottom: 0;
     display: flex;
@@ -183,7 +184,7 @@ li {
     height: 200px;
     justify-content: center;
   }
-  
+
   .footer-box {
     display: flex;
     align-items: center;
@@ -193,7 +194,7 @@ li {
     height: 150px;
     margin-top: -10px;
   }
-  
+
   .box-menu {
     display: flex;
   }
@@ -231,7 +232,7 @@ li {
   .Logotype-texte-footer {
     height: 90px;
   }
-  
+
   
  /******END FOOTER**********/
  
@@ -465,12 +466,21 @@ li {
     color: var(--secondColor);
 }
 
-.button:hover, .card-button:hover {
+.button:hover {
     color: var(--card-color);
     box-shadow: rgba(149, 157, 165, 0.5) 8px 8px 24px;
     transition: all 0.4s;
     cursor: pointer;
 }
+
+.card-button:hover {
+    color: var(--card-color);
+    box-shadow: rgba(149, 157, 165, 0.5) 1px 1px 12px;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+
 
 #rent {
     background-color: #BED284;
@@ -582,6 +592,7 @@ li {
 .card-button {
     background-color: var(--firstColor);
     width: 60%;
+    max-width: 15rem;
     margin: 1rem auto 1rem auto;
     border-radius: 4px;
     font-size: 1.1rem;
@@ -595,7 +606,104 @@ li {
 
     /*end----- CARDS SECTION ----------------*/
 
+.sub-description {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding : 1rem 3rem 0 3rem;
+}
+
+.sell-section {
+    padding-bottom: 4rem;
+}
+
 /************************END BOUTIQUE**********************************/
+
+/************************DETAILS BOUTIQUE******************************/
+.shop-details-section {
+    text-align: center;
+    margin: 4rem auto 1rem auto;
+}
+
+.shop-details-section h2 {
+    font-size: 1.3rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: var(--firstColor)
+}
+
+.shop-details-section h3 {
+    font-size: 1.1rem;
+    color: var(--thirdColor);
+}
+
+.shop-details-price {
+    margin-bottom: 2rem;
+    color: var(--thirdColor);
+    font-size: 1.3rem;
+}
+
+.shop-details-section img {
+    width: 90%;
+    border-radius: 4px;
+    margin: 2rem 0 2rem 0;
+}
+
+.shop-details-section .green {
+    color: var(--firstColor);
+}
+
+.shop-details-section .red {
+    color: red;
+}
+
+.shop-details-availability {
+    font-size: 1.2rem;
+}
+
+.shop-details-description {
+    max-width: 54rem;
+    margin: auto auto 10rem auto;
+    padding: 0 1.4rem 0 1.4rem;
+}
+
+.shop-details-description  h5,
+.shop-details-description  p {
+    text-align: start;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+/************************END DETAILS BOUTIQUE**************************/
+
+/***********************COMMANDE SUCCES********************************/
+
+.success-command-section {
+    text-align: center;
+    width: 80%;
+    margin: 10rem auto 25rem auto;
+}
+
+.success-command-section h2 {
+    font-size: 1.3rem;
+    color: var(--firstColor);
+}
+
+.success-command-section>* {
+    padding-top: 2rem;
+}
+
+.success-command-nom-instru {
+    color: var(--firstColor);
+}
+
+.success-command-information {
+    font-style: italic;
+    text-align: start;
+    font-size: 0.8rem;
+    color: var(--thirdColor);
+}
+
+/***********************END COMMANDE SUCCES****************************/
+
 
 /************************* Event ***************************************/
 
@@ -658,7 +766,6 @@ article {
     border-radius: 5px;
     border: none;
     box-shadow: 6px 6px 6px slategrey;
-
 }
 
 .twitter {
@@ -705,6 +812,7 @@ article {
     margin-bottom: -150px;
   }
 }
+
 /* Petit Ecran*/
 @media screen and (min-width:576px) /*and (max-width:768px)*/ {
   .espace-header {
@@ -720,7 +828,36 @@ article {
     display: flex;
     flex-direction: column;
   }
+
+  .success-command-section h2 {
+      font-size: 1.6rem;
+      color: var(--firstColor);
+  }
+
+  .success-command-section h3 {
+      font-size: 1.4rem;
+  }
+
+  .success-command-information {
+      text-align: center;
+      font-size: 1rem;
+  }
+
+  .sub-description {
+      text-align: center;
+  }
+
+  .shop-details-section img {
+      width: 70%;
+  }
+  .shop-details-section h2,
+  .shop-details-section h3,
+  .shop-details-price {
+      font-size: 1.5rem;
+  }
 }
+
+
 
 /* Medium Ecran*/
 @media screen and (min-width:768px) /*and (max-width:991px)*/ {
@@ -787,7 +924,7 @@ article {
   #menusimple {
     display: flex;
     margin-right: 35px;
-    font-family: "Raleway", sans-serif;
+    /*font-family: "Raleway", sans-serif;*/
     list-style-type: none;
   }
 
