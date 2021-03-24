@@ -7,10 +7,12 @@
     --secondColor: #1b1b1b;
     --thirdColor: #859684;
     --fourthColor: #204033;
+    --fifthColor: aliceblue;
     /*border color*/
     --sixthColor: lightgray;
 
     /*page*/
+
     --container-width: 1200px;
 
     /*--FONTS--*/
@@ -708,29 +710,32 @@ li {
 /************************* Event ***************************************/
 
 #events {
-    padding: 40px;
+    max-width: 1200px;
+    min-width: 200px;
+    padding: 45px;
 }
 
-#events h3, #events h4 {
-    padding-top: 2rem;
-}
-
-#events h2 {
+#events h1 {
     color: var(--secondColor);
     text-align: center;
-    border-bottom: 1px solid var(--secondColor);
     padding-bottom: 10px;
+    padding-top: 40px;
     font-size: x-large;
 }
 
-#events h3 {
+#events h2 {
     color: var(--thirdColor);
     font-size: large;
 }
 
-#events h4 {
+#events h3 {
     color: var(--firstColor);
     font-size: medium;
+    padding-bottom: 20px;
+}
+
+#events h2, #events h3 {
+    padding-top: 2rem;
 }
 
 #events img {
@@ -738,55 +743,193 @@ li {
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px 30px 0 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     max-width: 100%;
     height: auto;
 }
 
-article {
-    border-bottom-style: dotted;
-    padding-bottom: 20px;
-}
 #events p {
     text-align: justify;
+    font-size: medium;
+    padding-bottom: 15px;
 }
 
 #share {
     display: flex;
     justify-content: flex-end;
-    padding-bottom: 10px;
     padding-top: 10px;
+    border-bottom-style: dotted;
+    padding-bottom: 20px;
 }
 
 .facebook {
     background-color: #3b5998;
-    color: aliceblue;
+    color: var(--fifthColor);
     margin-right: 5px;
     margin-left: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
-    box-shadow: 6px 6px 6px slategrey;
+    box-shadow: 3px 3px 3px slategrey;
+    cursor: pointer;
 }
 
 .twitter {
     background-color: #00acee;
-    color: aliceblue;
+    color: var(--fifthColor);
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
-    box-shadow: 6px 6px 6px slategrey;
+    box-shadow: 3px 3px 3px slategrey;
+    cursor: pointer;
 }
 
 .link {
     background-color: var(--firstColor);
-    color: aliceblue;
+    color: var(--fifthColor);
     margin-right: 5px;
-    border-radius: 5px;
+    border-radius: 3px;
     border: none;
-    box-shadow: 6px 6px 6px slategrey;
+    box-shadow: 3px 3px 3px slategrey;
+    cursor: pointer;
+}
+/********************END EVENT**********************************************/
+
+/************************* TEAM ***************************************/
+
+#team h1 {
+    color: var(--secondColor);
+    text-align: center;
+    padding-bottom: 10px;
+    padding-top: 40px;
+    font-size: large;
 }
 
-/********************END EVENT**********************************************/
+#team h2 {
+    color: var(--thirdColor);
+    text-align: center;
+    font-size: medium;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+#team h3 {
+    color: var(--firstColor);
+    text-align: center;
+    font-size: small;
+    font-style: italic;
+    padding-bottom: 20px;
+}
+
+#team p {
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+#team img {
+    max-height: 160px;
+}
+
+.cards {
+    display: flex;
+    width: 60%;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 10px auto 30px auto;
+}
+
+.card-team {
+    width: var(--card-width);
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-team:hover {
+    box-shadow: rgba(149, 157, 165, 0.5) 8px 8px 24px;
+    transition: all 0.2s;
+}
+.card-body {
+    padding: 10px 20px;
+    background-color: var(--card-color);
+}
+
+#inside-shop h2 {
+    color: var(--thirdColor);
+    text-align: center;
+    font-size: large;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/*********************** GALERIE *******************************/
+
+*{box-sizing: border-box}
+
+img{max-width: 100%}
+
+input[type=radio] {
+    position: absolute;
+    left: -9999px
+}
+
+.cadre-demo1 label {
+    cursor:pointer;
+}
+
+.cadre-demo1 {
+    overflow: hidden;
+    position: relative;
+    max-width: 600px;
+    margin: 2rem auto
+}
+
+.photos-mini {
+    padding-top: 66.67%;
+    display: flex;
+
+}
+
+.miniature {
+    flex: 1;
+    padding:.25rem;
+
+}
+
+.fenetre {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    transition:all .6s;
+    left: -100%;
+    opacity: 0
+}
+
+.fen:checked~ .fenetre {
+    left: 0;
+    opacity: 1
+}
+
+figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: .25rem;
+    transition: opacity .4s;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    color: var(--fifthColor);
+    background: var(--secondColor);
+}
+
+.fen:checked~figcaption {
+    opacity: 1;
+}
+
+/********************END GALERIE******************************************/
+
+
+/********************END TEAM**********************************************/
 
 
 /**********************MEDIA QUERIES***********************************/
