@@ -49,3 +49,5 @@
   </div>
       <script type="text/javascript" src="buttonUp.js"></script>
 </footer>
+
+</body>
