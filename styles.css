@@ -58,7 +58,7 @@ a {
   position: fixed;
   z-index: 2;
   justify-content: space-between;
-  background-color: white;
+  background-color: #1b1b1b;
   height: 80px;
   width: 100%;
   border-bottom: 1px solid var(--thirdColor);
@@ -104,7 +104,7 @@ a {
   z-index: 2;
   display: none;
   width: 180px;
-  background-color: rgb(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.9);
   font-family: "Raleway", sans-serif;
   border-radius: 0px 0px 0 5px;
   box-shadow: black 0 2px 5px 0;
@@ -737,7 +737,6 @@ article {
     display: flex;
     margin-top: -100px;
     justify-content: space-between;
-    background-color: white;
     height: 100px;
   }
 
@@ -788,7 +787,6 @@ article {
   .header {
     display: flex;
     justify-content: space-between;
-    background-color: white;
     height: 100px;
   }
   #menusimple {
@@ -800,6 +798,3 @@ article {
 }
 
 /********************END MEDIA QUERIES**********************************************/
-
-
-
