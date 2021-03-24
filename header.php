@@ -20,7 +20,7 @@
             <li><a class="link-menu-burger" href="index.php">ACCUEIL</a></li>
             <li><a class="link-menu-burger" href="shop.php">BOUTIQUE</a></li>
             <li><a class="link-menu-burger" href="event.php">EVENEMENTS</a></li>
-            <li><a class="link-menu-burger" href="#">L'EQUIPE</a></li>
+            <li><a class="link-menu-burger" href="team.php">L'EQUIPE</a></li>
             <li><a class="link-menu-burger" href="form.php">CONTACT</a></li>
         </ul>
 
