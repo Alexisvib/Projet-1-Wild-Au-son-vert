@@ -29,8 +29,9 @@ require ('header.php')
             </form>
             <div class="Bloc"></div>
     </div>
-<?php require("footer.php") ?>
 <script src="form.js"></script>
+<?php require("footer.php") ?>
+
 
 </html>
 
