@@ -15,7 +15,8 @@
 <header>
     <div class="espace-header" id="espace-header"></div>
     <div class="header">
-        <img src="https://i.ibb.co/M7yQGWV/Logo-text.png" alt="Logo" class="logotype"/>
+    <a href="index.php">
+        <img src="https://i.ibb.co/M7yQGWV/Logo-text.png" alt="Logo" class="logotype"/></a>
         <ul id="menusimple">
             <li><a class="link-menu-burger" href="index.php">ACCUEIL</a></li>
             <li><a class="link-menu-burger" href="shop.php">BOUTIQUE</a></li>
