@@ -69,6 +69,7 @@ a {
   width: 100%;
   border-bottom: 1px solid var(--sixthColor);
   font-family: "Raleway", sans-serif;
+  background-color: white;
 }
 
 #boutonBurger {
