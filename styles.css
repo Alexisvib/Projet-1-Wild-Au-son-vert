@@ -713,6 +713,7 @@ li {
     max-width: 1200px;
     min-width: 200px;
     padding: 45px;
+    margin: 0 auto 0 auto;
 }
 
 #events h1 {
@@ -720,7 +721,7 @@ li {
     text-align: center;
     padding-bottom: 10px;
     padding-top: 40px;
-    font-size: x-large;
+    font-size: large;
 }
 
 #events h2 {
