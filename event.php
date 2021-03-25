@@ -10,7 +10,7 @@ require('header.php') ?>
                 <?php foreach ($articles as $article): ?>
                     <h2><?= $article['date']?></h2>
                     <h3><?= $article['type']?></h3>
-                    <img src="<?= $article['picture']?>">
+                    <img src="<?= $article['picture']?>" alt="<?= $article['description']?>">
                     <p><?= $article['contenu']?></p>
     <div id="share">
         <strong>Partager cet article sur:</strong>
