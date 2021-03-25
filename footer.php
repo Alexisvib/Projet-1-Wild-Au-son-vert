@@ -41,7 +41,7 @@
         <img src="https://i.ibb.co/1MQPrBx/Logotype-texte.png" alt="Logotype-texte" class="Logotype-texte-footer" /></a>
     </div>
   </div>
-  <a class="footer-made-text"> made with love by team</a><a class="suite" href="napak.php"> !NAPAK</a>
+  <a class="footer-made-text"> made with love by team</a><a class="suite"> !NAPAK</a>
   <script type="text/javascript" src="buttonUp.js"></script>
 </footer>
 </body>

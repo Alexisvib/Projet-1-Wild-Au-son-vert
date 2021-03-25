@@ -214,6 +214,18 @@ li {
   line-height: 2em;
 }
 
+.footer-made-text {
+  margin-left: 10px;
+  margin-bottom: 10px;
+  opacity: 0.5;
+  font-size: smaller;
+}
+
+.suite {
+  color: var(--firstColor);
+  font-size: smaller;
+}
+
 .icone-box {
   margin-left: 10px;
   padding: -50px;
@@ -991,7 +1003,7 @@ figcaption {
 }
 
 /* Petit Ecran*/
-@media screen and (min-width: 576px) /*and (max-width: 768px) */ {
+@media screen and (min-width: 576px) {
   .espace-header {
     z-index: 1;
     height: 80px;
@@ -1037,7 +1049,7 @@ figcaption {
 }
 
 /* Medium Ecran*/
-@media screen and (min-width: 768px) /*and (max-width: 991px) */ {
+@media screen and (min-width: 768px) {
   .header {
     display: flex;
     margin-top: -100px;
@@ -1082,7 +1094,7 @@ figcaption {
 }
 
 /* Large Ecran*/
-@media screen and (min-width: 991px) /*and (max-width: 1200px) */ {
+@media screen and (min-width: 991px) {
   .flex-cards {
     flex-direction: row;
     justify-content: space-evenly;
@@ -1134,7 +1146,6 @@ figcaption {
   #menusimple {
     display: flex;
     margin-right: 35px;
-    /*font-family: "Raleway", sans-serif;*/
     list-style-type: none;
   }
 }
