@@ -33,7 +33,7 @@ require('header.php')
                         <div class="card-header">
                             <img src=<?= $cardData['picture'] ?> alt=<?= $cardData['instrument'] ?>>
                         </div>
-                        <div class="card-body">
+                        <div class="card-body-shop">
                             <div class="card-title"><?= $cardData['instrument'] . '<br>' . 'Modèle ' . $cardData['model']?></div>
                             <div class="card-price"><?= $cardData['price']?></div>
                             <a href="shopDetails.php?key=<?=$key?>"><div class="card-button">ACHETER</div></a>
@@ -60,7 +60,7 @@ require('header.php')
                          <div class="card-header">
                              <img src=<?=$cardData['picture']?> alt=<?=$cardData['instrument']?>>
                          </div>
-                         <div class="card-body">
+                         <div class="card-body-shop">
                              <div class="card-title"><?= $cardData['instrument'] . '<br>' . 'Modèle ' . $cardData['model']?></div>
                              <div class="card-body-price">
                                  <div class="card-availability <?= $cardData['available'] ? 'green' : 'red'?>"><?= $cardData['available'] ? '✅ Disponible' : '❌ Indisponible'?></div>
