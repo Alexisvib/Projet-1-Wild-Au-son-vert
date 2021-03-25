@@ -21,7 +21,7 @@ require('carroussel.php');
                     <div class="card-header">
                         <img src=<?= $cards[$i]['picture'] ?> alt=<?= $cards[$i]['instrument'] ?>>
                     </div>
-                    <div class="card-body">
+                    <div class="card-body-shop">
                         <div class="card-title"><?= $cards[$i]['instrument'] . '<br>' . $cards[$i]['model'] ?></div>
                         <div class="card-price"><?= $cards[$i]['price'] ?></div>
                         <a href="shopDetails.php?key=<?=$i?>"><div class="card-button">ACHETER</div></a>
@@ -34,7 +34,7 @@ require('carroussel.php');
                 <div class="card-header">
                     <img src=<?= $cards[3]['picture'] ?> alt=<?= $cards[3]['instrument'] ?>>
                 </div>
-                <div class="card-body">
+                <div class="card-body-shop">
                     <div class="card-title"><?= $cards[3]['instrument'] . '<br>' . $cards[3]['model'] ?></div>
                     <div class="card-body-price">
                         <div class="card-availability <?= $cards[3]['available'] ? 'green' : 'red' ?>"><?= $cards[3]['available'] ? '✅ Disponible' : '❌ Indisponible' ?></div>
