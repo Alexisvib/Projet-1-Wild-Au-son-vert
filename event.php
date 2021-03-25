@@ -14,9 +14,9 @@ require('header.php') ?>
                     <p><?= $article['contenu']?></p>
     <div id="share">
         <strong>Partager cet article sur:</strong>
-        <button class="facebook">Facebook</button>
-        <button class="twitter">Twitter</button>
-        <button class="link">Copy Link</button>
+        <button class="facebook" onClick="alertMessage()">Facebook</button>
+        <button class="twitter" onClick="alertMessage()">Twitter</button>
+        <button class="link"onClick="alertMessage()">Copy Link</button>
     </div>
                 <?php endforeach; ?>
         </section>

@@ -1,4 +1,3 @@
-const buttonEvent = document.querySelector("button");
-buttonEvent.addEventListener('click', (event)=> {
+function alertMessage() {
     alert('Merci d\'avoir partagé cet article !');
-})
+}
