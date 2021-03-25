@@ -697,7 +697,7 @@ li {
 .success-command-section {
   text-align: center;
   width: 80%;
-  margin: 10rem auto 25rem auto;
+  margin: 10rem auto 30rem auto;
 }
 
 .success-command-section h2 {
@@ -718,6 +718,23 @@ li {
   text-align: start;
   font-size: 0.8rem;
   color: var(--thirdColor);
+}
+
+.success-command-section .unsuccess {
+  color: red;
+}
+
+.success-command-section a{
+  font-size: inherit;
+}
+
+.success-command-section a:hover{
+  color: var(--firstColor);
+  transition: all 0.4s;
+}
+
+.success-command-nom-instru {
+  font-size: inherit;
 }
 
 /***********************END COMMANDE SUCCES****************************/
@@ -1015,6 +1032,8 @@ figcaption {
   .shop-details-price {
     font-size: 1.5rem;
   }
+
+
 }
 
 /* Medium Ecran*/
