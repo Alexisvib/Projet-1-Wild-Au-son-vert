@@ -70,7 +70,7 @@ $cards = [
         'picture'     => 'assets/image-boutique/triangle.jpg',
         'status'      => 'location',
         'available'   => false,
-        'description' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vehicula rutrum lacus, quis euismod justo faucibus eu. Etiam leo ipsum, laoreet ut nunc sit amet, ultrices iaculis neque. Aenean at nunc erat. Proin id gravida ipsum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean facilisis rhoncus ante et finibus. Praesent ut massa et mi porttitor tincidunt et ut justo. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla ut turpis sed orci auctor ultricies. Quisque sagittis lorem nisl, non volutpat urna facilisis in. Etiam luctus eget justo imperdiet dignissim.',
+        'description' => 'Triangle tordu en carré, entièrement réparé. Lustré pour s\'y admirer lors de solo endiablé ! ',
     ],
     [
         'instrument'  => 'Set de Percussions',
