@@ -1,4 +1,4 @@
-# Project Number 1 - Wild Code School
+# Project Number 1 - Wild Code School - Au son Vert
 
 ## Description
 
